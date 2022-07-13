@@ -17,9 +17,13 @@
 >>
 >> [`API`](#API) 接口 `<br/>`
 >>
+>>> [`System`](#APISystem) 系统 `<br/>`
+>>>
+>>>> [`data`](#APISystem_data) 数据管理 `<br/>`
+>>>
 >>> [`Module`](#APIModule) 模块 `<br/>`
 >>>
->>>> [`equation_of_time`](#APIModule_equation_of_time) 均时差计算 `<br/>`
+>>>> [`jsondata`](#APIModule_jsondata) Json数据读写 `<br/>`
 >>>>
 >>>
 >>
@@ -35,10 +39,22 @@
 
 ### `<span id = 'MoYuEngine_EngineFrame'>MoYuEngine EngineFrame` 摸鱼引擎架构
 
-> 项目
->> 引擎
->> 游戏 资源
->> 游戏 数据
+> project 项目
+>> moyu_engine 引擎
+>> assets 游戏资源
+>> data 游戏数据
+
+    摸鱼引擎架构 为项目内嵌引擎
+
+> moyu_engine 引擎
+>> system 系统
+>>> module 模块
+
+    摸鱼引擎 引擎 内采用 上下级模块管理逻辑
+    只有上级模块可以调用其下一级的模块（不可跃级调用）
+    同级模块亦不可调用
+    调用逻辑应为 main(游戏) > system(系统) > module(模块)
+
 
 ### `<span id = 'Data'>data` 数据
 
@@ -46,27 +62,22 @@
 
 #### `<span id = 'APIModule'>Module` 模块
 
-#### `<span id = 'APIModule_equation_of_time'>equation_of_time` 均时差计算
+#### `<span id = 'APIModule_jsondata'>jsondata` Json数据读写
 
-    功能:  均时差计算
+    功能:  Json数据读写
 
     实例化:
-        eot = equation_of_time.EquationOfTime(year,month,day,hour,minute,second,timezone='Asia/Shanghai')
+        jm = JsonData(path='json',read_data={})
 
     变量:
-        self.leap_year_info [Boolean] 是否闰年
-
-    self.year [Integer] 年
-        self.month [Integer] 月
-        self.day [Integer] 日
-        self.hour [Integer] 时
-        self.minute [Integer] 分
-        self.second [Integer] 秒
-
-    self.timezone [String] 时区
+        self.path = path
+        self.read_data = read_data
+        self.write_path = {}
 
     调用:
-        self.true_solar_offset_display() # 输出均时差公式图表
+        self.read()
+
+        self.write(sdata_name,write_data)
 
 ## `<span id = 'Rule'>Rule` 格式规范
 
