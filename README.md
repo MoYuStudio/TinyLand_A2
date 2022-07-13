@@ -4,35 +4,35 @@
 
     TinyLand 弹丸之地
 
-项目大纲: [Outline](https://github.com/MoYuStudio/M-N_Stock/blob/main/note/outline) `<br/>`
-项目笔记: [Note](https://github.com/MoYuStudio/M-N_Stock/blob/main/note/note) `<br/>`
+项目大纲: [Outline](https://github.com/MoYuStudio/M-N_Stock/blob/main/note/outline) <br/>
+项目笔记: [Note](https://github.com/MoYuStudio/M-N_Stock/blob/main/note/note) <br/>
 
 ## 引索
 
-> [`Official Documentation`](#OfficialDocumentation) 官方文档 `<br/>`
+> [`Official Documentation`](#OfficialDocumentation) 官方文档 <br/>`
 >
->> [`MoYuEngine EngineFrame`](#MoYuEngine_EngineFrame) MoYuEngine EngineFrame 摸鱼引擎架构 `<br/>`
+>> [`MoYuEngine EngineFrame`](#MoYuEngine_EngineFrame) MoYuEngine EngineFrame 摸鱼引擎架构 <br/>`
 >>
->> [`Data`](#Data) 数据 `<br/>`
+>> [`Data`](#Data) 数据 <br/>`
 >>
->> [`API`](#API) 接口 `<br/>`
+>> [`API`](#API) 接口 <br/>
 >>
->>> [`System`](#APISystem) 系统 `<br/>`
+>>> [`System`](#APISystem) 系统 <br/>
 >>>
->>>> [`data`](#APISystem_data) 数据管理 `<br/>`
+>>>> [`data`](#APISystem_data) 数据管理 <br/>
 >>>
->>> [`Module`](#APIModule) 模块 `<br/>`
+>>> [`Module`](#APIModule) 模块 <br/>
 >>>
->>>> [`jsondata`](#APIModule_jsondata) Json数据读写 `<br/>`
+>>>> [`jsondata`](#APIModule_jsondata) Json数据读写 <br/>
 >>>>
 >>>
 >>
 >
-> [`Rule`](#Rule) 格式规范 `<br/>`
+> [`Rule`](#Rule) 格式规范 <br/>
 >
->> [`MoYuStudio Python Code Rule`](#MoYuStudio_Python_Code_Rule) MoYuStudio Python代码编写格式规范 `<br/>`
->> [`MoYuStudio Name Rule`](#MoYuStudio_Name_Rule) MoYuStudio 命名格式规范 `<br/>`
->> [`MoYuStudio Git Commit Message Rule`](#MoYuStudio_Git_Commit_Message_Rule) MoYuStudio Git提交备注格式规范 (借鉴 Angular 团队的 Commit 规范)`<br/>`
+>> [`MoYuStudio Python Code Rule`](#MoYuStudio_Python_Code_Rule) MoYuStudio Python代码编写格式规范 <br/>
+>> [`MoYuStudio Name Rule`](#MoYuStudio_Name_Rule) MoYuStudio 命名格式规范 <br/>
+>> [`MoYuStudio Git Commit Message Rule`](#MoYuStudio_Git_Commit_Message_Rule) MoYuStudio Git提交备注格式规范 (借鉴 Angular 团队的 Commit 规范)<br/>
 >>
 
 ## `<span id = 'OfficialDocumentation'>Official Documentation` 官方文档
