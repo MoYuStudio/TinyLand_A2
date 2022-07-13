@@ -4,7 +4,19 @@ import json
 
 class JsonData:
     '''
-        Json数据管理器
+        [ MoYuEngine # Json数据管理器 ]
+        
+    功能:  Json数据读写
+
+    变量:
+        self.path = path
+        self.read_data = read_data
+        self.write_path = {}
+
+    调用:
+        self.read()s
+
+        self.write(sdata_name,write_data)
     '''
     
     def __init__(self,path='json',read_data={}):
