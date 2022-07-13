@@ -67,17 +67,17 @@
     功能:  Json数据读写
 
     实例化:
-        jm = JsonData(path='json',read_data={})
+        jm = JsonData(path='json',read_data={}) 
 
     变量:
-        self.path = path
-        self.read_data = read_data
-        self.write_path = {}
+        self.path = path # 指定文件夹路径
+        self.read_data = read_data # 存储读取的数据
+        self.write_path = {} # 写入路径字典
 
     调用:
-        self.read()
+        self.read() # 读取数据
 
-        self.write(sdata_name,write_data)
+        self.write(sdata_name,write_data) # 写入数据
 
 ## <span id = 'Rule'>`Rule` 格式规范
 
