@@ -56,13 +56,13 @@
     调用逻辑应为 main(游戏) > system(系统) > module(模块)
 
 
-### `<span id = 'Data'>data` 数据
+### <span id = 'Data'>`data` 数据
 
-### `<span id = 'API'>API` 接口
+### <span id = 'API'>`API` 接口
 
-#### `<span id = 'APIModule'>Module` 模块
+#### <span id = 'APIModule'>`Module` 模块
 
-#### `<span id = 'APIModule_jsondata'>jsondata` Json数据读写
+#### <span id = 'APIModule_jsondata'>`jsondata` Json数据读写
 
     功能:  Json数据读写
 
@@ -79,9 +79,9 @@
 
         self.write(sdata_name,write_data)
 
-## `<span id = 'Rule'>Rule` 格式规范
+## <span id = 'Rule'>`Rule` 格式规范
 
-### `<span id = 'MoYuStudio_Python_Code_Rule'>MoYuStudio Python Code Rule` MoYuStudio Python代码编写格式规范
+### <span id = 'MoYuStudio_Python_Code_Rule'>`MoYuStudio Python Code Rule` MoYuStudio Python代码编写格式规范
 
 #### 编码
 
@@ -342,7 +342,7 @@
 
     """Oneline docstring"""
 
-### `<span id = 'MoYuStudio_Name_Rule'>MoYuStudio Name Rule` MoYuStudio 命名格式规范
+### <span id = 'MoYuStudio_Name_Rule'>`MoYuStudio Name Rule` MoYuStudio 命名格式规范
 
 #### 常量
 
@@ -356,7 +356,7 @@
 
     首字母大写 使用大驼峰式命名法
 
-### `<span id = 'MoYuStudio_Git_Commit_Message_Rule'>MoYuStudio Git Commit Message Rule` MoYuStudio Git提交备注格式规范 (借鉴 Angular 团队的 Commit 规范)
+### <span id = 'MoYuStudio_Git_Commit_Message_Rule'>`MoYuStudio Git Commit Message Rule` MoYuStudio Git提交备注格式规范 (借鉴 Angular 团队的 Commit 规范)
 
     每次提交，Commit message 都包括三个部分: Header，Body 和 Footer。
 
