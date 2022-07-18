@@ -32,13 +32,7 @@ class Tile:
         self.offset = [0,0]
         
     def renderer(self,surface):
-        self.timer()
-        self.rect.x = self.pos['z']*(self.width/2)-self.pos['x']*(self.width/2)+self.offset[0]
-        self.rect.y = self.pos['x']*(self.width/4)+self.pos['z']*(self.width/4)+self.offset[1]+(-self.width/2)*int(self.pos['y'])
         
-        surface.blit(self.assets[self.code], self.rect)
-        
-    def timer(self):
         for type in self.timer_timer:
             try:
                 timer = self.tile_data[str(self.code)][type+'_timer']
@@ -51,6 +45,13 @@ class Tile:
             
             except:
                 pass
+            
+        self.rect.x = self.pos['z']*(self.width/2)-self.pos['x']*(self.width/2)+self.offset[0]
+        self.rect.y = self.pos['x']*(self.width/4)+self.pos['z']*(self.width/4)+self.offset[1]+(-self.width/2)*int(self.pos['y'])
+        
+        surface.blit(self.assets[self.code], self.rect)
+        
+        
         
     def touch(self,change_tile):
         if self.pos['y'] == '1':

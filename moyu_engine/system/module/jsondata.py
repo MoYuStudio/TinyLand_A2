@@ -9,14 +9,14 @@ class JsonData:
     功能:  Json数据读写
 
     变量:
-        self.path = path
-        self.read_data = read_data
-        self.write_path = {}
+        self.path = path # 指定文件夹路径
+        self.read_data = read_data # 存储读取的数据
+        self.write_path = {} # 写入路径字典
 
     调用:
-        self.read()s
+        self.read() # 读取数据
 
-        self.write(sdata_name,write_data)
+        self.write(sdata_name,write_data) # 写入数据
     '''
     
     def __init__(self,path='json',read_data={}):
